@@ -1,0 +1,346 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #0ee219;
+    padding: 5px 0;
+    text-align:justify;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+ul li{
+    display: inline;
+    margin: 0 0 0 60px;
+    text-align: center;
+}
+
+ul a{
+    text-transform: uppercase;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 30px;
+}
+
+main{
+    background: linear-gradient(#fdaf06, #f0e6e6);
+}
+
+.proyectos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.proyectos li{
+    display:inline-block;
+    text-align: center;
+    width: 32%;
+    vertical-align: top;
+    margin: 0 0.5%;
+    padding: 100px 30px;
+    box-sizing: border-box;
+    border: 4px solid #000000;
+    border-radius: 10px;
+}
+
+.proyectos h2{
+    font-size: 35px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.proyectos li:hover h2{
+    font-size: 20px;
+}
+
+.proyectos-descripcion{
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+}
+
+.desafio1{
+    width: 100%;
+    padding: 10px;
+}
+
+.desafio2{
+    width: 100%;
+    padding: 10px;
+}
+
+.desafio3{
+    width: 95%;
+    padding: 10px;
+}
+
+.proyectos-direccion{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color:#f1db11;
+    font-size: 20px;
+    margin:0px;
+}
+
+img.mifoto{
+    width: 15%;
+    border-radius: 3px;
+    box-shadow: 6px 4px 10px;
+}
+
+form{
+    margin: 0px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 30px;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+
+}
+.horarios{
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+}
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 100%;
+    padding: 15px 0;
+    font-size: 40px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: rgb(0, 255, 21);
+    transform: scale(1.2);
+}
+
+
+/*Aquí inicia el CSS para nuestra home*/
+.fondo{
+    width: 100%;
+}
+
+.principal{
+    padding: 0;
+    background: #0ee219;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.titulo-principal{
+    text-align: left;
+    font-size: 3em;
+    margin: 0 0 1em;
+    float: left;
+    color: #caeb0c;
+    font: normal 50px Varela Round, sans-serif;
+    height: 100%;
+    left: 0;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    animation: move linear 3000ms infinite;
+    z-index: 2
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+    0% {
+     text-shadow:
+        4px -4px 0 #da0641,
+        3px -3px 0 #da0641,
+        2px -2px 0 #da0641,
+        1px -1px 0 #da0641,
+        -4px 4px 0 #13f1fc,
+        -3px 3px 0 #13f1fc,
+        -2px 2px 0 #13f1fc,
+        -1px 1px 0 #13f1fc
+        ;
+    }
+    25% {
+     text-shadow:
+        -4px -4px 0 #13f1fc,
+        -3px -3px 0 #13f1fc,
+        -2px -2px 0 #13f1fc,
+        -1px -1px 0 #13f1fc,
+        4px 4px 0 #da0641,
+        3px 3px 0 #da0641,
+        2px 2px 0 #da0641,
+        1px 1px 0 #da0641
+        ;
+    }
+    50% {
+     text-shadow:
+        -4px 4px 0 #da0641,
+        -3px 3px 0 #da0641,
+        -2px 2px 0 #da0641,
+        -1px 1px 0 #da0641,
+        4px -4px 0 #13f1fc,
+        3px -3px 0 #13f1fc,
+        2px -2px 0 #13f1fc,
+        1px -1px 0 #13f1fc
+        ;
+    }
+    75% {
+     text-shadow:
+        4px 4px 0 #13f1fc,
+        3px 3px 0 #13f1fc,
+        2px 2px 0 #13f1fc,
+        1px 1px 0 #13f1fc,
+        -4px -4px 0 #da0641,
+        -3px -3px 0 #da0641,
+        -2px -2px 0 #da0641,
+        -1px -1px 0 #da0641
+        ;
+    }
+    100% {
+     text-shadow:
+        4px -4px 0 #da0641,
+        3px -3px 0 #da0641,
+        2px -2px 0 #da0641,
+        1px -1px 0 #da0641,
+        -4px 4px 0 #13f1fc,
+        -3px 3px 0 #13f1fc,
+        -2px 2px 0 #13f1fc,
+        -1px 1px 0 #13f1fc
+        ;
+    }
+    
+    }
+
+.fotoperfil{
+    width: 250px;
+    margin: 0 50px 20px 0;
+    float:right;
+    border-radius: 3px;
+    box-shadow: 6px 4px 10px;
+}
+
+.principal p{
+    margin: 1em 0 0;
+
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.titulo-secundario{
+    background: linear-gradient(#0ee219, #f0e6e6);
+    font: normal 40px Varela Round, sans-serif;
+    text-align: center;
+    padding-top: 0%;
+}
+
+.titulo-tercero{
+    background: linear-gradient#f17807;
+    font: normal 200px Varela Round, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px
+}
+
+.titulo-cuarto{
+    font: normal 200px Varela Round, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px
+}
+
+
+.historia{
+    padding: 3em;
+    background: linear-gradient(#f17807, #f6f7f3)
+}
+
+.historia p{
+    margin: 10 10 10;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    
+}
+
+.historia-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.SKILLS{
+    padding: 0 0;
+    background:linear-gradient(#f6f7f3, #f17807);
+}
+
+
+.video{
+    width: 560px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+}
+
